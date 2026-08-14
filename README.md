@@ -1,4 +1,4 @@
-# Petrophysics_Code
+# PPC (PetroPhysics Code)
 
 Unofficial Python implementations of articles published in
 [*Petrophysics*](https://www.spwla.org/petrophysics-journal) — the journal of the
