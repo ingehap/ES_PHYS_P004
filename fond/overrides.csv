@@ -1,0 +1,5 @@
+# Manuell omklassifisering der navn + Morningstar-kategori gir feil gruppe.
+# Fyll bare ut kolonnene du vil overstyre; resten utledes som før.
+# Kolonner: isin,marked,sektor,eksponering,tilt,smallcap,valutasikret,notat
+isin,marked,sektor,eksponering,tilt,smallcap,valutasikret,notat
+NO0010700891,Norge,,,,,,"Alfred Berg Indeks R følger Oslo Børs; navnet sier ikke Norge og Morningstar klassifiserer den som Europe Equity Large Cap"
