@@ -23,6 +23,18 @@ jobs:
       - name: mypy (strict, petrolib only)
         run: mypy
 
+  # fond/ is stdlib-only and sits outside pyproject's testpaths, so the
+  # petrolib lane never sees it.  Own job, own runner, no shared setup.
+  fond-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"   # oldest version fond/ claims to support
+      - name: Fund tooling unit tests
+        run: python fond/test_fond.py
+
   petrolib-tests:
     runs-on: ubuntu-latest
     strategy:
